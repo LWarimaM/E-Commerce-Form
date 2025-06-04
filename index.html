@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width, intial-scale=1.0">
+        <title>Customer Registration</title>
+        <style>
+            body{
+                font-family: 'Times New Roman', Times, serif;
+                background-color: #f4f4;
+                margin: 0;
+                padding: 20px;
+            }
+            
+            .container{
+                max-width: 500px;
+                margin: auto;
+                background: color #f4f4;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+            h1{
+                text-align: center;
+                color: #333;
+            }
+            img.logo{
+                display: block;
+                margin: 0 auto 20px;
+                width: 100px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                margin: 10px 0;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                box-sizing: border-box
+            }
+            input[type="submit"]{
+                background: #28a745;
+                color: white;
+                border: none;
+                padding: 10px;
+                border-radius: 5px;
+                cursor: pointer;
+                width: 100%;
+                margin-top: 10px;
+            }
+            input[type="submit"]:hover{
+                background: #218821;   
+            }
+        </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="logo.jpg" alt="Company logo" class="logo">
+        <h1>Register</h1>
+        <form>
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address"required>
+            <input type="password" placeholder="Password" required>
+            <input type="password" placeholder="Confirm Password" required>
+            <input type="submit"value="Create Account">   
+        </form>
+    </div>
+</body>
+</html>
